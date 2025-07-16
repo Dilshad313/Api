@@ -10,7 +10,7 @@
   <div class="navbar">
     <h1>E-commerce App</h1>
     <nav>
-      <div>Home</div>
+      <div><a style="color: white; text-decoration: none;" href="./index.html">Home</a></div>
       <div>Products</div>
       <div>About</div>
       <div>Purchase</div>
@@ -18,12 +18,26 @@
     </nav>
   </div>
 
-  <div class="space">
-    <div id="container2" style="display: flex; flex-wrap: wrap;"></div>
-    <hr />
-    <div id="totalPrice" style="text-align:center; font-size: 24px; margin: 20px;"></div>
+  <div class="cart-container">
+    <div class="cart-items" id="container2">
+    </div>
+
+    <div class="billing-summary">
+      <h2>Billing Summary</h2>
+      <div id="totalPrice"></div>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="Address" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button onclick="placeholder(event)" type="submit">Place Order</button>
+      </form>
+    </div>
   </div>
 
-  <script src="./add.js"></script>
+  <script src="./add.js">
+    
+
+  </script>
 </body>
 </html>
